@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style4.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <script src="index4.js" defer></script>
+  <title>Portfolio Website</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <button id="toggleTheme" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume Outline</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  </nav><br />
+
+  <main class="homepage">
+    <section id="home" class="hero">
+      <img src="pic 1 (1).png" alt="My Profile Picture" />
+      <p>
+        Hi there 👋,<br />
+        meet <b>Denis Kombe Karisa</b>,<br />
+        a vibrant techie ready to offer solutions<br />
+        with tech beyond technology.
+      </p>
+    </section>
+  </main>
+
+  <div class="container">
+    <section id="about" class="section">
+      <h3>Brief Professional Summary</h3>
+      <p>
+        Result-driven tech enthusiast with 2 years of experience.<br />
+        Strong foundation in <strong>data analytics, database management and technical help desk support.</strong><br />
+        Passionate about using technology to solve problems. I aspire to contribute to innovative projects that drive meaningful change.
+      </p>
+    </section>
+
+    <section id="resume" class="section">
+      <h3>My Resume</h3>
+
+      <h4>Skills</h4>
+      <button class="toggle-btn" onclick="toggleMore('skills')">View More ▼</button>
+      <div id="skills" class="more-content" style="display: none;">
+        <ul>
+          <li>Data Analytics with Python</li>
+          <li>Data visualization with Power BI and Tableau</li>
+          <li>Hand-on ML model building</li>
+          <li>Web Development.</li>
+          <li>Database Management.</li>
+          <li>Technical Help Desk Support.</li>
+          <li>Research, Analytical Thinking, and Problem Solving.</li>
+          <li>Team Leadership and Strong Communication Skills both Verbal and Written.</li>
+        </ul>
+      </div>
+
+      <h4>Academic background</h4>
+      <button class="toggle-btn" onclick="toggleMore('Academic')">View More ▼</button>
+      <div id="Academic" class="more-content" style="display: none;">
+        <ul>
+          <li><b>(2021–2025)</b><br />
+            BSc. Information and Communication Technology.<br />
+            Jaramogi Oginga Odinga University of Science and Technology.<br />
+            <i>Expected Graduation - October, 2025.</i></li>
+          <li><b>(2017–2021)</b><br />
+            Kenya Certificate of Secondary Education (KCSE).<br />
+            Ribe Boys High School.<br />
+            <i>Grade Attained: B-</i></li>
+        </ul>
+      </div>
+
+      <h4>Work Experience</h4>
+      <button class="toggle-btn" onclick="toggleMore('Work')">View More ▼</button>
+      <div id="Work" class="more-content" style="display: none;">
+        <ul>
+          <li><b>May 2024 – August 2024</b><br />
+            IT Support Staff - Attachment Role<br />
+            Office of the County Attorney, County Government of Kilifi.<br />
+            - Supported System Maintenance and Troubleshooting.<br />
+            - Provided technical support for software issues.<br />
+            - Contributed to the digitization of over 800 visitors' records.</li>
+          <li><b>July 2025 (Present)</b><br />
+            Data Science Intern at Future Interns<br />
+            - Data Analytics.<br />
+            - Dashboard Creation with Power BI.</li>
+        </ul>
+      </div>
+
+      <h4>Certifications</h4>
+      <button class="toggle-btn" onclick="toggleMore('certifications')">View More ▼</button>
+      <div id="certifications" class="more-content" style="display: none;">
+        <ul>
+          <li><b>Currently Participating</b><br />Data and Artificial Intelligence<br />Cyber Shujaa.</li>
+          <li><b>Currently Participating</b><br />AZ-900: Azure Fundamentals<br />Udemy.</li>
+          <li><b>March 2025</b><br />Data Analytics for Project Management<br />Udemy.</li>
+          <li><b>August 2024</b><br />Data Analysis with MySQL and Tableau<br />Zindua School.<br />
+            <a href="#">Link to Certificate</a></li>
+        </ul>
+      </div>
+
+      <h4>Achievements</h4>
+      <button class="toggle-btn" onclick="toggleMore('achievements')">View More ▼</button>
+      <div id="achievements" class="more-content" style="display: none;">
+        <ul>
+          <li><b>Data Analysis Challenge with Zindua School.</b><br />
+            I participated in this two-month challenge where I gained valuable skills in data analytics, data visualization, data storytelling, collaboration through teamwork, and presentation skills.<br />
+            May 2024 – August 2024.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects section remains unchanged and working correctly -->
+
+    <section id="projects" class="section">
+      <h3>My Projects</h3>
+  <details class="project">
+    <summary>1. Campus Crib – Final Fourth Year Project</summary>
+    <p><i>October 2024 – April 2025</i><br>
+      Designed and developed a web-based platform with advanced search filters and real-time chat to help campus students find off-campus hostels.<br>
+      <strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP, MySQL, XAMPP<br>
+      <a href="https://github.com/denko5/Campus-Crib" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>2. Exploratory Data Analysis with MySQL</summary>
+    <p>Cleaned and analyzed a dataset of African products with over 1,000 sales records using MySQL Workbench.<br>
+      <a href="https://github.com/denko5/Sales-Analysis" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>3. Web Scraping and Data Handling in Python</summary>
+    <p>Used <code>requests</code> and <code>BeautifulSoup</code> to extract and clean data, stored in a Pandas DataFrame and exported to CSV.<br>
+      <a href="https://colab.research.google.com/drive/1TUai2mEbBYmzW4NjdvW05vQK-ZjZTBla?usp=sharing" target="_blank">Google Colab</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>4. Netflix Data Wrangling</summary>
+    <p>Processed the Netflix dataset on Kaggle with cleaning, anomaly detection, and visualizations.<br>
+      <a href="https://www.kaggle.com/code/deniskombe5gmailcom/data-wrangling-netflix-dataset" target="_blank">Kaggle Notebook</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>5. Titanic Exploratory Data Analysis</summary>
+    <p>Performed univariate, bivariate, and multivariate analysis on the Titanic dataset.<br>
+      <a href="https://www.kaggle.com/code/deniskombe5gmailcom/titanic-dataset-eda" target="_blank">Kaggle Notebook</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>6. Business Intelligence on Power BI</summary>
+    <img src="WK4.PNG" alt="Power BI Hotel Dashboard" loading="lazy" width="100%" height="auto">
+    <p>Created a dashboard for hotel management using Power BI, Power Query, and DAX.<br>
+      <a href="https://drive.google.com/drive/folders/1mB9-xq0VVQqda7Kqv43sVFVPAidpcmkm" target="_blank">Project Files</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>7. Visualization with Tableau</summary>
+    <img src="dashboard.PNG" alt="Tableau HR Dashboard" loading="lazy" width="100%" height="auto">
+    <p>Built a Tableau dashboard for HR data analysis.<br>
+      <a href="https://public.tableau.com/views/HRDASHBOARD_17513078026020/HRSUMMARY" target="_blank">Dashboard</a> |
+      <a href="HumanResources-Kenyan.csv" target="_blank">Dataset</a> |
+      <a href="Week 5 Tableau Dashboard.pdf" target="_blank">Report</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>8. E-Commerce Sales Dashboard</summary>
+    <img src="E-COMMERCE SALES DASHBOARD.PNG" alt="E-Commerce Dashboard" loading="lazy" width="100%" height="auto">
+    <p><a href="superstore.csv" target="_blank">Dataset Used</a></p>
+  </details>
+
+  <details class="project">
+    <summary>9. Kenya Human Resource Dashboard</summary>
+    <img src="D1.PNG" alt="Kenya HR Dashboard" loading="lazy" width="100%" height="auto">
+    <p><a href="HumanResources-Kenyan (3).csv" target="_blank">Dataset Used</a></p>
+  </details>
+
+  <details class="project">
+    <summary>10. Linear Regression Model with Python</summary>
+    <p>Built a regression model to predict home prices using a single feature.<br>
+      <a href="https://colab.research.google.com/drive/1WO2k4k5yrAU4J11VaZ-rGkizja4rrYmx?usp=sharing" target="_blank">Google Colab</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>11. Multiple Classification Models</summary>
+    <p>Compared Logistic Regression, Decision Tree, Random Forest, KNN, Naive Bayes, and SVM on the Wine dataset.<br>
+      <a href="https://colab.research.google.com/drive/1mM0_QFxayHhLNOFlivzOscdtWFSarky4?usp=sharing" target="_blank">Google Colab</a>
+    </p>
+  </details>
+
+  <details class="project">
+    <summary>12. Machine Learning Operations (MLPOs)</summary>
+    <p>Built a regression pipeline using KNN and GridSearchCV on the California Housing dataset.<br>
+      <a href="https://colab.research.google.com/drive/1mM0_QFxayHhLNOFlivzOscdtWFSarky4?usp=sharing" target="_blank">Google Colab</a>
+    </p>
+  </details>
+
+  <p class="upcoming">– More Upcoming Projects...</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h3>My Professional Links</h3>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/deniskombe" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/denko5" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:deniskombe5@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.tiktok.com/@code.ke" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://medium.com/@deniskombe5/data-confidence-december-e62789a3135c" class="social-link" aria-label="Medium"><i class="fab fa-medium"></i> Medium</a>
+        <a href="https://x.com/d_w_denis?t=uV2-ptdwBHCjNg2HpSoMag&s=09" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i> X</a>
+        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Denis Kombe's Portfolio</p>
+  </footer>
+
+  <script>
+    function toggleMore(id) {
+      const content = document.getElementById(id);
+      if (content && content.style) {
+        content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
+      }
+    }
+  </script>
+</body>
+</html>
